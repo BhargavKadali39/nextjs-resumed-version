@@ -6,6 +6,8 @@ export default function Home() {
   return (
     <div>
       <Field a="1" b="2" c="3" />
+      <Field a="4" b="5" c="6" />
+      <Field a="7" b="8" c="9" />
     </div>
   );
 }
