@@ -14,7 +14,7 @@ export default function NameUs({ a, b, c }) {
       <li>{a}</li>
       <li>{b}</li>
       <li>{c}</li>
-      <button onclick={setCl('{a}')}>copy</button>
+      <button onclick={setCl('a')}>copy</button>
     </ul>
   );
 }
