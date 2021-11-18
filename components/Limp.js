@@ -1,6 +1,6 @@
 export default function NameUs({ a, b, c }) {
   function setCl(value) {
-    var tempInput = document.createElement('input');
+    var tempInput = createElement('input');
     tempInput.style = 'position: absolute; left: -1000px; top: -1000px';
     tempInput.value = value;
     document.body.appendChild(tempInput);
