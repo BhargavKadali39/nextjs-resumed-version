@@ -1,12 +1,4 @@
 export default function NameUs({ a, b, c }) {
-  return (
-    <ul>
-      <li>{a}</li>
-      <li>{b}</li>
-      <li>{c}</li>
-      <button onclick="setCl('{a}')">copy</button>
-    </ul>
-  );
   function setCl(value) {
     var tempInput = document.createElement('input');
     tempInput.style = 'position: absolute; left: -1000px; top: -1000px';
@@ -17,4 +9,12 @@ export default function NameUs({ a, b, c }) {
     document.body.removeChild(tempInput);
     alert('Copied');
   }
+  return (
+    <ul>
+      <li>{a}</li>
+      <li>{b}</li>
+      <li>{c}</li>
+      <button onclick={setCl('{a}')}>copy</button>
+    </ul>
+  );
 }
